@@ -1,0 +1,41 @@
+#texto {
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5vw; /* Cambiar a unidades relativas (vw) para tamaño de texto dinámico */
+    font-weight: bolder;
+    color: #e70101;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: blink-caret 4.75s step-end infinite;
+    z-index: 1000; /* Asegura que esté por encima de todo */
+    background-color: rgba(0, 0, 0, 0); /* Fondo semi-transparente */
+    padding: 5px 20px;
+    border-radius: 40px;
+    box-shadow: 0  10px rgba(226, 226, 226, 0.616);
+}
+
+/* Media query para pantallas más pequeñas (móviles) */
+@media (max-width: 500px) {
+    #texto {
+        font-size: 8vw; /* Ajustar tamaño de texto en dispositivos pequeños */
+        padding: 50px 15px; /* Ajustar el padding */
+        border-radius: 30px; /* Ajustar el radio de los bordes */
+    }
+}
+
+/* Media query para pantallas medianas (tablets) */
+@media (max-width: 900px) {
+    #texto {
+        top: 8%;
+        font-size: 7vw; /* Ajuste de tamaño en tablets */
+        padding: 5px 18px;
+        border-radius: 35px;
+    }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #333; }
+}
