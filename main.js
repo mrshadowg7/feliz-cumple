@@ -2,7 +2,7 @@ onload = () =>{
         document.body.classList.remove("container");
 };
 
-const texto = "Para mi culona fav";
+const texto = "Feliz cumpleaños!!";
 const elementoTexto = document.getElementById("texto");
 let index = 0;
 
